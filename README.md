@@ -1,0 +1,1 @@
+The Email Scheduler project is designed to streamline and automate the email scheduling and sending process for a college placement cell. The primary goal is to create a robust system that ensures timely communication with companies, students, involved in placement activities. The project integrates with Gmail API its custom features(using an algo)
