@@ -52,9 +52,10 @@ spring.mail.properties.mail.smtp.auth=true  # Enable SMTP authentication
 spring.mail.properties.mail.smtp.starttls.enable=true  # Enable TLS for secure connection
 spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
 ```
-##Json files for POST
 
-###Send single Email
+## Json files for POST
+
+### Send single Email
 
 - **URL:** `/email/send`
 - **Method:** `POST`
