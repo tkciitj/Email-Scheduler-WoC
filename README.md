@@ -33,7 +33,10 @@ This will start both the backend and frontend (if configured in the scripts).
 
 ## API Endpoints
 
-For sending single email `http://localhost:8080/email/send`.
+For sending single email: `http://localhost:8080/email/send`.
+.
+.
+.
 
 ### Authentication
 
@@ -49,8 +52,10 @@ spring.mail.properties.mail.smtp.auth=true  # Enable SMTP authentication
 spring.mail.properties.mail.smtp.starttls.enable=true  # Enable TLS for secure connection
 spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
 ```
-##Json files for POST##
-###Send single Email###
+##Json files for POST
+
+###Send single Email
+
 - **URL:** `/email/send`
 - **Method:** `POST`
 - **Request Body:**
@@ -63,7 +68,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
   }
   ```
 - **Response:**
-  - **Success (201):**
+  - **Success (200):**
     ```json
     {
       Email sent successfully!
