@@ -222,7 +222,36 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
     "labels":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
   }
   ```
-
+### 5). Total Emails sent
+- **URL:** `/dashboard/sent`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "TotalSent": "No. of total emails sent"
+  }
+  ```
+  ### 6). Total Emails scheduled to be sent
+- **URL:** `/dashboard/scheduled`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "TotalScheduled": "No. of total emails scheduled to be sent"
+  }
+  ```
+  ### 7). Total Failed Emails
+- **URL:** `/dashboard/failed`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "TotalFailed": "No. of total failed emails"
+  }
+  ```
 
 ---
 
