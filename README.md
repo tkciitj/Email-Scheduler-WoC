@@ -308,9 +308,40 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
     "TotalFailed": "No. of total failed emails"
   }
   ```
-  
-
-
+  ### 8. Graphs of Emails sent in-
+  #### i) last week
+  - **URL** `/emails/graph/lastweek
+  - **Method** `GET`
+  - **Response**
+     **Success (200)**
+     ```json
+     {
+     "values": [],
+     "labels":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+     }
+     ```
+  #### ii) last month
+  - **URL** `/emails/graph/lastmonth
+  - **Method** `GET`
+  - **Response**
+     **Success (200)**
+       ```json
+       {
+         "values":[],
+         "labels":["Week 1","Week 2","Week 3","Week 4"]
+       }
+       ```
+  #### iii) last year
+  - **URL** `/emails/graph/lastyear
+  - **Method** `GET`
+  - **Response**
+     **Success (200)**
+       ```json
+       {
+         "values":[],
+          "labels":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+       }
+       ```
 ## Additional Details
 
 ### 1. Excel File Format
