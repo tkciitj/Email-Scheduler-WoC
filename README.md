@@ -156,6 +156,39 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       "message": "Failed to process the Excel file"
     }
     ```
+    ### 5). List and graph of Emails Sent to a Particular Company
+#### i) List of emails
+- **URL** `/emails/list/company/{CompanyName}`
+- **Method** `POST`
+- **Request Body:**
+  ```json
+  {
+      "CompanyName":"Name of company"
+  }
+  ```
+- **Response**
+-  - **Success (200):**
+    ```json
+    {
+      "emails":[
+        {
+         "dateTime": "Date and time at which email was sent",
+         "subject": "Subject of the email",
+         "status": "Delivered/Undelivered"
+        },
+        { "dateTime": "Date and time at which email was sent",
+         "subject": "Subject of the email",
+         "status": "Delivered/Undelivered"
+        }
+       ]
+    }
+    ```
+  - **Error (400):**
+    ```json
+    {
+      "message": "Invalid Comapny name"
+    }
+    ```
 ## Json files for GET
 
 ### 1). Total Follow-up Emails sent
@@ -252,8 +285,8 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
     "TotalFailed": "No. of total failed emails"
   }
   ```
+  
 
----
 
 ## Additional Details
 
