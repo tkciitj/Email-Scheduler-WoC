@@ -188,6 +188,41 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
     "FailedEmails": "No. of emails failed"
   }
   ```
+### 4).  Graph of Follow-up Emails sent in -
+#### i) last Week
+- **URL:** `/followup-emails/graph/lastWeek`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "values": [],
+    "labels": ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+  }
+  ```
+#### ii) last Month
+- **URL:** `/followup-emails/graph/lastMonth`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "values": [],
+    "labels":["Week 1","Week 2","Week 3","Week 4"]
+  }
+  ```
+#### ii) last Year
+- **URL:** `/followup-emails/graph/lastYear`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "values": [],
+    "labels":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+  }
+  ```
+
 
 ---
 
