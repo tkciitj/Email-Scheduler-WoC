@@ -156,6 +156,38 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       "message": "Failed to process the Excel file"
     }
     ```
+## Json files for GET
+
+### 1). Total Follow-up Emails sent
+- **URL:** `/followup-emails/sent`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "TotalSent": "No. of emails sent"
+  }
+  ```
+### 2). Total Follow-up Emails scheduled to be sent
+- **URL:** `/followup-emails/scheduled`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "TotalScheduled": "No. of emails scheduled"
+  }
+  ```
+### 3). Total Follow-up Emails failed
+- **URL:** `/followup-emails/failed`
+- **Method:** `GET`
+- **Response:**
+  - **Success (200):**
+  ```json
+   {
+    "FailedEmails": "No. of emails failed"
+  }
+  ```
 
 ---
 
