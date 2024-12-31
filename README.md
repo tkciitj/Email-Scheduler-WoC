@@ -9,7 +9,6 @@ Every time you pull the latest changes from the repository, run the following co
 - In the **pom.xml** file add:
 
   ```bash
-  <dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
@@ -52,7 +51,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
 
 ## Json files for POST
 
-### Send single Email
+### 1). Send single Email
 
 - **URL:** `/email/send`
 - **Method:** `POST`
