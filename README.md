@@ -156,7 +156,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       "message": "Failed to process the Excel file"
     }
     ```
-### 5). List and graph of Emails Sent to a Particular Company
+### 5. List and graph of Emails Sent to a Particular Company
 #### i) List of emails
 - **URL** `/emails/list/company/{CompanyName}`
 - **Method** `POST`
@@ -189,6 +189,29 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       "message": "Invalid Comapny name"
     }
     ```
+#### ii) Graph of emails sent per company
+- **URL** `/emails/graph/company/{CompanyName}`
+- **Method** `POST`
+- **Request Body:**
+  ```json
+  {
+      "CompanyName":"Name of the company"
+  }
+  ```
+- **Response:**
+   -**Success (200):**
+    ```json
+    {
+      "graph":{
+          "labels":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+  }
+           "numberOfEmails":[number of emails sent per month]
+    }
+    ```
+    -**Error (400):**
+     {
+      "message": "Invalid Comapny name"
+     }       
 ## Json files for GET
 
 ### 1). Total Follow-up Emails sent
