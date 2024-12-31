@@ -156,7 +156,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       "message": "Failed to process the Excel file"
     }
     ```
-    ### 5). List and graph of Emails Sent to a Particular Company
+### 5). List and graph of Emails Sent to a Particular Company
 #### i) List of emails
 - **URL** `/emails/list/company/{CompanyName}`
 - **Method** `POST`
