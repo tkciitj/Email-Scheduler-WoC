@@ -33,7 +33,7 @@ This will start both the backend and frontend (if configured in the scripts).
 
 ## API Endpoints
 
-For sending single email: `http://localhost:8080/email/send`.
+All API endpoints are prefixed with: `http://localhost:<portnumber>`.
 .
 .
 .
