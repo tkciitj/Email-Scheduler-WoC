@@ -34,9 +34,6 @@ This will start both the backend and frontend (if configured in the scripts).
 ## API Endpoints
 
 All API endpoints are prefixed with: `http://localhost:<portnumber>`.
-.
-.
-.
 
 ### Authentication
 
