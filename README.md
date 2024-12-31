@@ -329,7 +329,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
     "labels":["Week 1","Week 2","Week 3","Week 4"]
   }
   ```
-#### ii) last Year
+#### iii) last Year
 - **URL:** `/followup-emails/graph/lastYear`
 - **Method:** `GET`
 - **Response:**
