@@ -68,7 +68,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
   - **Success (200):**
     ```json
     {
-      Email sent successfully!
+      "message":"Email sent successfully!"
     }
     ```
   - **Error (400):**
