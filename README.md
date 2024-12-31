@@ -232,7 +232,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
     "TotalSent": "No. of total emails sent"
   }
   ```
-  ### 6). Total Emails scheduled to be sent
+### 6). Total Emails scheduled to be sent
 - **URL:** `/dashboard/scheduled`
 - **Method:** `GET`
 - **Response:**
@@ -242,7 +242,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
     "TotalScheduled": "No. of total emails scheduled to be sent"
   }
   ```
-  ### 7). Total Failed Emails
+### 7). Total Failed Emails
 - **URL:** `/dashboard/failed`
 - **Method:** `GET`
 - **Response:**
