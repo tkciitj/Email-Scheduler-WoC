@@ -205,7 +205,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       "graph":{
           "labels":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
   }
-           "numberOfEmails":[number of emails sent per month]
+           "numberOfEmailsSent":[]
     }
     ```
     -**Error (400):**
@@ -263,7 +263,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       "graph":{
           "labels":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
   }
-           "numberOfEmails":[number of Follow-up emails sent per month]
+           "numberOfEmailsSent":[]
     }
     ```
     -**Error (400):**
