@@ -72,3 +72,123 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
       Email sent successfully!
     }
     ```
+  - **Error (400):**
+    ```json
+    {
+      "message": "Invalid request data"
+    }
+    ```
+    
+### 2. Schedule Bulk Emails using an Excel Sheet
+- **URL:** `/email/schedule/bulk`
+- **Method:** `POST`
+- **Headers:**
+  - `Content-Type: multipart/form-data`
+- **Request Body:**
+  - **Key:** `file`
+    - Upload an Excel file containing the following columns:
+      - `to`: Recipient email address
+      - `subject`: Email subject
+      - `body`: Email body
+- **Response:**
+  - **Success (200):**
+    ```json
+    {
+      "message": "Bulk emails scheduled successfully"
+    }
+    ```
+  - **Error (400):**
+    ```json
+    {
+      "message": "Failed to process the Excel file"
+    }
+    ```
+
+### 3. Schedule a Single Follow-Up Email
+- **URL:** `/email/schedule/followup`
+- **Method:** `POST`
+- **Headers:**
+  - `Content-Type: application/json`
+- **Request Body:**
+  ```json
+  {
+    "to": "recipient@example.com",
+    "subject": "Follow-Up Email",
+    "body": "This is a follow-up email.",
+    "scheduledTime": "2024-12-31T10:00:00"
+  }
+  ```
+- **Response:**
+  - **Success (200):**
+    ```json
+    {
+      "message": "Follow-up email scheduled successfully"
+    }
+    ```
+  - **Error (400):**
+    ```json
+    {
+      "message": "Invalid scheduling request"
+    }
+    ```
+
+### 4. Schedule Bulk Follow-Up Emails using an Excel Sheet
+- **URL:** `/email/schedule/followup/bulk`
+- **Method:** `POST`
+- **Headers:**
+  - `Content-Type: multipart/form-data`
+- **Request Body:**
+  - **Key:** `file`
+    - Upload an Excel file containing the following columns:
+      - `to`: Recipient email address
+      - `subject`: Email subject
+      - `body`: Email body
+      - `scheduledTime`: Time to send the follow-up email (in ISO format, e.g., `2024-12-31T10:00:00`)
+- **Response:**
+  - **Success (200):**
+    ```json
+    {
+      "message": "Bulk follow-up emails scheduled successfully"
+    }
+    ```
+  - **Error (400):**
+    ```json
+    {
+      "message": "Failed to process the Excel file"
+    }
+    ```
+
+---
+
+## Additional Details
+
+### 1. Excel File Format
+- The Excel file for bulk email scheduling should follow this structure:
+
+| to                  | subject           | body                      | scheduledTime         |
+|---------------------|-------------------|---------------------------|-----------------------|
+| recipient1@example.com | Test Email 1     | This is email 1.          | (Optional for bulk emails) |
+| recipient2@example.com | Follow-Up Email  | This is follow-up email.  | 2024-12-31T10:00:00  |
+
+### 2. Scheduling Logic
+- Emails can be scheduled at a specific time using the `scheduledTime` parameter.
+- If `scheduledTime` is omitted for bulk emails, they will be sent immediately.
+
+### 3. Error Handling
+- All endpoints return appropriate error messages for invalid input or processing failures.
+- Example:
+  ```json
+  {
+    "message": "Invalid email address"
+  }
+  ```
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+- Java 17+
+- Spring Boot 3.x
+- Maven
+- SMTP credentials (e.g., Gmail or any SMTP provider)
