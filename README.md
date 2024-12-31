@@ -310,7 +310,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
   ```
   ### 8. Graphs of Emails sent in-
   #### i) last week
-  - **URL** `/emails/graph/lastweek
+  - **URL** `/emails/graph/lastweek`
   - **Method** `GET`
   - **Response**
      **Success (200)**
@@ -321,7 +321,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
      }
      ```
   #### ii) last month
-  - **URL** `/emails/graph/lastmonth
+  - **URL** `/emails/graph/lastmonth`
   - **Method** `GET`
   - **Response**
      **Success (200)**
@@ -332,7 +332,7 @@ spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com  # Trust SMTP server
        }
        ```
   #### iii) last year
-  - **URL** `/emails/graph/lastyear
+  - **URL** `/emails/graph/lastyear`
   - **Method** `GET`
   - **Response**
      **Success (200)**
